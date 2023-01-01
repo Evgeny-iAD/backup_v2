@@ -1,16 +1,22 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+import warnings
+from datetime import date, timedelta, datetime
+import logging.config
 
 
-# Press the green button in the gutter to run the script.
+warnings.filterwarnings('ignore', '.*Failed to load HostKeys.*')
+current_date = date.today()
+user_db = 'root'
+secret_db = 'PaSdbR00t'
+port = 22
+cnopts = pysftp.CnOpts()
+cnopts.hostkeys = None
+logging.basicConfig(filename='Transport.log', level=logging.INFO, filemode='a+')
+data_json = {}
+Time_limit = 100
+
+
+
+# ЗАПУСК ПРОГРАММЫ
 if __name__ == '__main__':
     print_hi('PyCharm')
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
