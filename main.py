@@ -14,7 +14,6 @@ logging.basicConfig(filename='Transport.log', level=logging.INFO, filemode='a+')
 data_json = {}
 Time_limit = 100
 
-
 # ЗАПУСК ПРОГРАММЫ
 if __name__ == '__main__':
     print_hi('PyCharm')
