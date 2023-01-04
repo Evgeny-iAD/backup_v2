@@ -11,8 +11,8 @@ import  schedule
 
 warnings.filterwarnings('ignore', '.*Failed to load HostKeys.*')
 current_date = date.today()
-user_db = 'root'
-secret_db = 'PaSdbR00t'
+user_db = ''
+secret_db = ''
 port = 22
 cnopts = pysftp.CnOpts()
 cnopts.hostkeys = None
